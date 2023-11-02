@@ -13,32 +13,25 @@
         <body>
             <!-- HEADER -->
                 <header class="header">
-                    <nav class="nav">
-                        <div>
-                            <img class="img" src="./img/codoacodo.png" alt="logo">
+                    <nav id="navBar" class="navbar navbar-expand-lg bg-body-tertiary">
+                        <div class="container-fluid">
+                            <div>
+                                <img id="img" src="./img/codoacodo.png" alt="logo">
+                                <a class="navbar-brand" href="#">Conf Bs As</a>
+                            </div>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                <div class="navbar-nav ms-auto">
+                                    <a id="conferencia" class="nav-link active" aria-current="page" href="#">La conferencia</a>
+                                    <a class="nav-link" href="#oradores">Los oradores</a>
+                                    <a class="nav-link" href="#lugar">El lugar y la fecha</a>
+                                    <a class="nav-link" href="#conviertete">Conviértete en orador</a>
+                                    <a id="ticket-nav" class="nav-link " href="#ticket">Comprar tickets</a>
+                                </div>
+                            </div>
                         </div>
-                        <h1 class="titulo_pag" href="#">Conf Bs As</h1>
-                        <input type="checkbox" id="check">
-                        <label for="check" class="bar-btn">
-                            <i class="fa-solid fa-bars"></i>
-                        </label>
-                        <ul class="nav-menu">
-                            <li class="nav-menu-item">
-                                <a class="nav-menu-link nav-link" aria-current="page" href="#">La conferencia</a>
-                            </li>
-                            <li class="nav-menu-item">
-                                <a class="nav-menu-link nav-link" href="#oradores">Los oradores</a>
-                            </li>
-                            <li class="nav-menu-item">  
-                                <a class="nav-menu-link nav-link" href="#lugar">El lugar y la fecha</a>
-                            </li>
-                            <li class="nav-menu-item"> 
-                                <a class="nav-menu-link nav-link" href="#conviertete">Conviértete en orador</a>
-                            </li>
-                            <li class="nav-menu-item"> 
-                                <a id="ticket-nav" class="nav-menu-link nav-link" href="#">Comprar tickets</a>
-                            </li>
-                        </ul>
                     </nav>
                 </header>
             <!-- MAIN -->
@@ -174,6 +167,76 @@
                                     <button class="btn btn-success">Enviar</button>
                                 </div>
                             </div> 
+                        </div>
+                    <!-- 5ta SECCION - TICKET -->
+                        <div class="container text-center" id="ticket">
+                            <div>
+                                <div class="cards">
+                                    <div class="card-tickets" id="cardticket1">
+                                        <div class="card-body-ticket">
+                                            <h4 class="card-title-ticket">Estudiantes</h4>
+                                            <span class="card-text-ticket">Tiene un descuento</span>
+                                            <p class="card-ticket-descuento">80%</p>
+                                            <p class="documentacion">*presentar documentación</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-tickets" id="cardticket2">
+                                        <div class="card-body-ticket">
+                                            <h4 class="card-title-ticket">Trainee</h4>
+                                            <span class="card-text-ticket">Tiene un descuento</span>
+                                            <p class="card-ticket-descuento">50%</p>
+                                            <p class="documentacion">*presentar documentación</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-tickets" id="cardticket3">
+                                        <div class="card-body-ticket">
+                                            <h4 class="card-title-ticket">Junior</h4>
+                                            <span class="card-text-ticket">Tiene un descuento</span>
+                                            <p class="card-ticket-descuento">15%</p>
+                                            <p class="documentacion">*presentar documentación</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="titulo-valor-ticket">
+                                <span>VENTA </span>
+                                <h2>VALOR DE TICKET $200</h2>
+                            </div>
+                            <div class="container form-ticket">
+                                <form class="row g-3">
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control" id="inputNombre" placeholder="Nombre">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control" id="inputApellido" placeholder="Apellido">
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="email" class="form-control" id="inputAddress" placeholder="Correo">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="inputCantidad" id="label-cantidad" class="form-label">Cantidad</label>
+                                        <input type="text" class="form-control" id="inputCantidad" placeholder="cantidad">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="inputCategoria" id="label-cantidad" class="form-label">Categoria</label>
+                                        <select id="inputCategoria" class="form-select">
+                                            <option selected="">Opciones...</option>
+                                            <option>Estudiante</option>
+                                            <option>Trainee</option>
+                                            <option>Junior</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="container-pagar">
+                                            <span id="totalAPagar" class="pagar">Total a Pagar: $</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary" id="boton-borrar">Borrar</button>
+                                        <button type="submit" class="btn btn-primary" id="boton-resumen">Resumen</button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                 </main>
             <!-- FOOTER -->

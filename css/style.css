@@ -6,275 +6,367 @@
         box-sizing: border-box;
     }
 
-/* BODY */
+    /* BODY */
+
+        /* HEADER */
+
+            #navBar{
+                background-color: #353A40 !important;
+                color: #ffffff;
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 999;
+                width: 100%;
+                padding-right: 10%;
+                padding-left: 10%;
+                border-radius: 0px;
+            }
+            
+            .container-fluid{
+                padding-bottom: 20px;
+            } 
+            
+            #img{
+                width: 100px;
+                height: 60px;
+            }
+            
+            #conferencia{
+                color: #ffffff !important;
+            }
+            
+            .navbar-brand{
+                color: #ffffff !important;
+            }
+            
+            .nav-link{
+                color: #9C9DA2 !important;
+            }
+            
+            #ticket-nav{
+                color: #25A946 !important;
+            }
+            
+            .navbar-toggler{
+                margin-right: 3%;
+                border-color: #000000 !important;
+            }
+        /* MAIN */
+
+            /* CARRUSEL */   
+
+                #carouselExampleAutoplaying{
+                    margin-top: 70px;
+                    margin-bottom: 10px;
+                }
+
+                .d-block{
+                    filter: brightness(50%) !important;
+                }
+
+                .text-overlay{
+                    margin-left: 5%;
+                    margin-right: 5%;
+                }
+
+                .quiero{
+                    background-color: transparent;
+                    color: white;
+                    border: solid 1px white;
+                    border-radius: 5px;
+                    text-align: center;
+                    padding: 7px;
+                    margin-right: 10px;
+                }
+
+                .comprar{
+                    background-color: green;
+                    color: white;
+                    border: solid 1px green;
+                    border-radius: 5px;
+                    text-align: center;
+                    padding: 7px;
+                }
+
+            /* ORADORES */
+
+                .cards{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    margin-bottom: 50px;
+                }
+                .card{
+                    width: 18rem;
+                    margin: 10px;
+                    border-radius: 5px 5px 0 0 !important;
+                }
+
+                .card-body{
+                    display: block;
+                    text-align: left;
+                }
+
+                .card-bottom{
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .container-booton{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .javascript{
+                    background-color: gold;
+                    padding: 1px 6px;
+                    font-weight: bold;
+                    border-radius: 0.3rem;
+                    text-align: center;
+                }
+
+                .react{
+                    background-color: lightblue;
+                    color: white;
+                    padding: 1px 6px;
+                    font-weight: bold;
+                    border-radius: 0.3rem;
+                    text-align: center;
+                    margin-left: 5px;
+                }
+
+                .negocios{
+                    background-color: #6C757E;
+                    color: white;
+                    padding: 1px 6px;
+                    font-weight: bold;
+                    border-radius: 0.3rem;
+                    text-align: center;
+                    margin-left: 5px;
+                }
+
+                .startups{
+                    background-color: red;
+                    color: white;
+                    padding: 1px 6px;
+                    font-weight: bold;
+                    border-radius: 0.3rem;
+                    text-align: center;
+                    margin-left: 5px;
+                }
+
+                .card-text{
+                    font-size: 0.8rem;
+                }
+
+            /* LUGAR */
+
+                #col2{
+                    background-color: #353A40;
+                    color: white;
+                    padding-left: 5%;
+                    padding-right: 5%;
+                    padding-top: 1%;
+                    padding-bottom: 1%;
+                }
+
+                .octubre{
+                    font-size: 1.1rem;
+                    font-weight: bold;
+                }
+
+                .texto_span{
+                    font-size: 0.7rem;
+                }
+
+                .button{
+                    background-color: #353A40;
+                    color: white;
+                    border: solid 1px white;
+                    font-size: 0.8rem;
+                    border-radius: 5px;
+                    margin-top: 1%;
+                    margin-left: 5%;
+                }
+
+                .col-md-6{
+                    padding-left: 0px !important;
+                    padding-right: 0px !important;
+                }
+
+                .text-container{
+                    padding-left: 5%;
+                    padding-right: 5%;
+                }
 
 
-/* HEADER */
+            /* FORMULARIO */
 
-    .header {
-        background-color: #353A40;
-        height: 80px;
-        width: 100%;
-        top: 0;
-        left: 0;
-        z-index: 999;
-        position: fixed;
-    }
+                .container-form{
+                    width: 90%;
+                    height: auto;
+                    margin: 0 auto;
+                    margin-bottom: 50px;
+                }
 
-    #check {
-        display: none;
-    }
+                .izquierda{
+                    text-align: center;
+                    font-size: 0.9rem;
+                }
 
-    .bar-btn {
-        display: none;
-    }
+                .btn-success{
+                    background-color: lightgreen !important;
+                    border: none !important;
+                    width: 100%;
+                }
 
-    .nav {
-        width: 100%;
-        align-items: center;
-    }
+                .anotate{
+                    display: inline-flex;
+                    font-size: 0.9rem;
 
-    .nav-link {
-        color: rgb(5, 5, 5);
-        text-decoration: none;
-    }
+                }
 
-    .img{
-        width: 180px;
-        height: 60px;
-        padding-left: 80px;
-    }
+                #form-control{
+                    margin-top:  5px !important;
+                    width: 100%;
+                }
 
-    .titulo_pag {
-        font-size: 20px;
-        font-weight: 600;
-        color: white;
-    }
+            /* TICKETS */
 
-    .nav-menu {
-        display: flex;
-        margin-right: 20px;
-        list-style: none;
-    }
+                .form-ticket{
+                    width: 400px !important;
+                }
 
-    .nav-menu-item {
-        font-size: 22px;
-    }
+                #ticket-nav{
+                    color: #25A946 !important;
+                }
 
-    .nav-menu-link {
-        padding: 8px;
-        border-radius: 3px;
-    }
+                .cards{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    margin-bottom: 50px;
+                }
 
-    .nav-menu-link:hover ,
-    .nav-menu-link_active {
-        background-color: rgb(238, 140, 12);
-        transition: 0.5s;
-    }
+                .card-tickets{
+                    width: 12rem;
+                    height: 11rem;
+                    margin: 3px;
+                }
 
-/* MAIN */
+                #cardticket1{
+                    border: 1px solid #007BFF
+                }
 
+                #cardticket2{
+                    border: 1px solid #17A2B8
+                }
 
-/* CARRUSEL */   
+                #cardticket3{
+                    border: 1px solid #FFC107
+                }
 
-    #carouselExampleAutoplaying{
-        margin-top: 70px;
-        margin-bottom: 10px;
-    }
+                .card-body-ticket{
+                    display: block;
+                    text-align: center;
+                    padding-top: 21px;
+                }
 
-    .d-block{
-        filter: brightness(50%) !important;
-    }
+                #inputNombre{
+                    width: 95%;
+                }
 
-    .text-overlay{
-        margin-left: 5%;
-        margin-right: 5%;
-    }
+                #inputApellido{
+                    width: 95%;
+                }
 
-    .quiero{
-        background-color: transparent;
-        color: white;
-        border: solid 1px white;
-        border-radius: 5px;
-        text-align: center;
-        padding: 7px;
-        margin-right: 10px;
-    }
+                #inputAddress{
+                    margin-left: -8px !important;
 
-    .comprar{
-        background-color: green;
-        color: white;
-        border: solid 1px green;
-        border-radius: 5px;
-        text-align: center;
-        padding: 7px;
-    }
+                }
 
-/* ORADORES */
+                #inputCategoria{
+                    width: 380px !important;
+                }
 
-    .cards{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        margin-bottom: 50px;
-    }
-    .card{
-        width: 18rem;
-        margin: 10px;
-        border-radius: 5px 5px 0 0 !important;
-    }
+                #label-cantidad{
+                    float: left;
+                }
 
-    .card-body{
-        display: block;
-        text-align: left;
-    }
+                .card-ticket-descuento{
+                    font-weight: bold;
+                    margin-top: 10px;
+                }
 
-    .card-bottom{
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-    }
+                .documentacion{
+                    font-size: 0.8rem;
+                    color: #868686;
+                }
 
-    .container-booton{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .javascript{
-        background-color: gold;
-        padding: 1px 6px;
-        font-weight: bold;
-        border-radius: 0.3rem;
-        text-align: center;
-    }
+                .container-pagar{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    margin-bottom: 10px;
+                }
 
-    .react{
-        background-color: lightblue;
-        color: white;
-        padding: 1px 6px;
-        font-weight: bold;
-        border-radius: 0.3rem;
-        text-align: center;
-        margin-left: 5px;
-    }
+                .titulo-valor-ticket{
+                    margin-bottom: 20px;
+                    margin-top: -40px;
+                }
 
-    .negocios{
-        background-color: #6C757E;
-        color: white;
-        padding: 1px 6px;
-        font-weight: bold;
-        border-radius: 0.3rem;
-        text-align: center;
-        margin-left: 5px;
-    }
-
-    .startups{
-        background-color: red;
-        color: white;
-        padding: 1px 6px;
-        font-weight: bold;
-        border-radius: 0.3rem;
-        text-align: center;
-        margin-left: 5px;
-    }
-
-    .card-text{
-        font-size: 0.8rem;
-    }
-
-/* LUGAR */
-
-    #col2{
-        background-color: #353A40;
-        color: white;
-        padding-left: 5%;
-        padding-right: 5%;
-        padding-top: 1%;
-        padding-bottom: 1%;
-        
-    }
-
-    .octubre{
-        font-size: 1.1rem;
-        font-weight: bold;
-    }
-
-    .texto_span{
-        font-size: 0.7rem;
-    }
-
-    .button{
-        background-color: #353A40;
-        color: white;
-        border: solid 1px white;
-        font-size: 0.8rem;
-        border-radius: 5px;
-        margin-top: 1%;
-        margin-left: 5%;
-        
-    }
-
-    .col-md-6{
-        padding-left: 0px !important;
-        padding-right: 0px !important;
-    }
-
-    .text-container{
-        padding-left: 5%;
-        padding-right: 5%;
-    }
+                .pagar{
+                    background-color: #CCE5FF;
+                    color: #000000;
+                    border: solid 1px #B8DAFF;
+                    text-align: left;
+                    padding: 7px;
+                    margin-right: 10px;
+                    margin-left: -9px;;
+                    width: 100%;
+                }
 
 
-/* FORMULARIO */
+                #boton-borrar{
+                    background-color: #97C93E;
+                    border-color: #97C93E;
+                    width: 289px;
+                    margin: 4px;
+                    margin-bottom: 17px;
+                    margin-left: -15px;;
+                }
 
-    .container-form{
-        width: 90%;
-        height: auto;
-        margin: 0 auto;
-        margin-bottom: 50px;
-    }
+                #boton-resumen{
+                    background-color: #97C93E;
+                    border-color: #97C93E;
+                    width: 289px;
+                    margin: 4px;
+                    margin-bottom: 17px;
+                }
 
-    .izquierda{
-        text-align: center;
-        font-size: 0.9rem;
-    }
+        /* FOOTER */
 
-    .btn-success{
-        background-color: lightgreen !important;
-        border: none !important;
-        width: 100%;
-    }
+            .footer{
+                bottom: 0;
+                width: 100%;
+                background: linear-gradient(to right, #1C3643, #1E5372);
+            }
 
-    .anotate{
-        display: inline-flex;
-        font-size: 0.9rem;
+            .nav-link{
+                color: white !important;
+                font-size: 0.8rem !important;
+            }
 
-    }
-
-    #form-control{
-        margin-top:  5px !important;
-        width: 100%;
-    }
-
-/* FOOTER */
-
-    .footer{
-        bottom: 0;
-        width: 100%;
-        background: linear-gradient(to right, #1C3643, #1E5372);
-    }
-
-    .nav-link{
-        color: white !important;
-        font-size: 0.8rem !important;
-    }
-
-    #footer{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+            #footer{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
 
 /* MEDIA QUERIES */
 
@@ -289,6 +381,7 @@
         
         .container-img{
             position: relative;
+            margin-top: -65px !important;
         }
 
         .text-overlay {
@@ -355,6 +448,39 @@
         .izquierda{
             text-align: left;
             color: #868686;
+        }
+
+        hr{
+            display: none;
+        }
+    
+        .cards{
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        .form-ticket{
+            width: 620px !important;
+        }
+    
+        #inputCategoria{
+            width: 280px !important;
+        }
+    
+        #cardticket1:hover{
+            border-color: #007BFF;
+            box-shadow: inset 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        }
+        
+        #cardticket2:hover{
+            border-color: #17A2B8;
+            box-shadow: inset 0 0 0 0.2rem rgba(23, 162, 184, 0.25);
+        }
+        
+        #cardticket3:hover{
+            border-color: #FFC107;
+            box-shadow: inset 0 0 0 0.2rem rgba(255, 193, 7, 0.25);
         }
 
         .nav-link{
